@@ -1,0 +1,38 @@
+<div class=" container">
+    <div class="row">
+        <div class=" col-lg-9">
+            <div class="ml-3">
+                <div class="text-center">
+                    <h2 class="mb-2 mt-4">{{courseID.name}}</h2>
+                    <iframe width="1050" height="600"
+                        src="https://www.youtube.com/embed/{{courseID.video}}" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <p> {{courseID.description}}</p>
+                 <div>учители : <a href="https://www.youtube.com/c/0guitars"> Konograi</a> 
+                                <a href="https://www.youtube.com/watch?v=q2ePljUEqR8"> Андрей Аксенов</a>
+                                <a href="https://www.youtube.com/watch?v=djy0GvqgYjA&list=PLXBTReiUHqsiMdb-zyNNI5ITPlhh_VdRL&index=1"> Валериея Галимова</a> 
+                 </div>
+                  
+            </div>
+        </div>
+
+        <div class="bg-white col-lg-3 ml">
+
+            <h2 class="ml-4 mt-2 mb-2">Список видео {{courses.slug}}</h2>
+            <ol>
+                {{#each course}}
+                <li class="list mt-2">
+                    <a href="?_id={{this._id}}">
+                        <span class="list_title" data-id="{{this._id}}">{{this.name}}</span>
+                    </a>
+                </li>
+                {{/each}}
+            </ol>
+           
+        </div>
+
+    </div>
+</div>
