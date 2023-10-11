@@ -1,0 +1,24 @@
+<div class="mt-4 ml-4">
+    <h3 class="h3 text-center">Мои данные</h3>
+
+    <form class="mt-4" method="POST" action="/edit-user/updateuser?_method=PUT">
+
+        <div class="form-group">
+            <label for="nameUser">Название Пользователи</label>
+            <input type="text" class="form-control" value="{{Account.nameUser}}" id="nameUser" name="nameUser">
+        </div>
+        <div class="form-group">
+            <label for="email">Электронная почта</label>
+            <input type="text" class="form-control" value="{{Account.email}}" id="email" name="email">
+        </div>
+          <div class="form-group">
+            <label for="password">пароль</label>
+            <input type="text" class="form-control" value="{{Account.password}}" id="password" name="password">
+        </div>
+
+      <div class="text-center mb-4">
+            <button type="submit" class="btn btn-primary">Сохранять</button>
+      </div>
+        
+    </form>
+</div>

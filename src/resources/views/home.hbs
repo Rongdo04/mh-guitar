@@ -1,0 +1,20 @@
+<div class="web_form">
+    
+    {{!-- <img src="/img/img1.jpg" alt="img"> --}}
+    <h1 class = "text text-white text-center " >xin chào </h1>
+    {{#if UserName}}   
+    <div class="center">
+       <a href="/courses">
+             <button type="button" class="btn-lg bg-transparent border-white font-weight-bold text-white ">Bắt đầu!</button>
+       </a>
+        </div>
+
+        {{else}}
+        <div class="center">
+         <a href="/login">
+                 <button type="button" class="btn-lg bg-transparent border-white font-weight-bold text-white ">Bắt đầu!</button>
+            </a>
+        </div>
+     {{/if}}
+
+</div>

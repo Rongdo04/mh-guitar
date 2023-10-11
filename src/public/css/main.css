@@ -1,0 +1,9 @@
+.web {
+  background-color: #FCF3CF;
+  display: block;
+  font-size: 100%;
+  border-left: 20px;
+  margin-bottom: 0px; }
+
+.container {
+  max-width: 100%; }
